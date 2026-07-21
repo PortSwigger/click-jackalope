@@ -1,0 +1,23 @@
+<p>Click-Jackalope generates clickjacking proof-of-concept pages from target URLs and inspects response headers for frame-defense directives. It adds a dedicated tab and context menu items for extracting URLs from intercepted traffic, producing ready-to-use HTML test pages, and documenting framing behavior for reports.</p>
+
+<h2>Features</h2>
+<ul>
+  <li>Inspects <code class=InlineCode>X-Frame-Options</code> and CSP <code class=InlineCode>frame-ancestors</code> headers from selected responses and explains the expected framing outcome.</li>
+  <li>Generates clickjacking PoC pages from three templates: <code class=InlineCode>standard</code>, <code class=InlineCode>decoy-login</code>, and <code class=InlineCode>banner-lure</code>.</li>
+  <li>Provides an in-extension HTML preview before saving or opening the generated page in a browser.</li>
+  <li>Can serve the generated PoC over localhost for HTTP-based testing in addition to local-file testing.</li>
+  <li>Adds context menu items in Proxy, Target, Repeater, and Logger to pre-populate the target URL from a selected request.</li>
+  <li>Copies concise report-ready notes summarising the target and observed frame-defense headers.</li>
+  <li>Makes iframe sandboxing optional and escapes untrusted URL content before rendering it into generated HTML.</li>
+</ul>
+
+<h2>Usage</h2>
+<ol>
+  <li>Open the <code class=InlineCode>Click-Jackalope</code> tab after loading the extension.</li>
+  <li>Paste a target URL into the URL field, or right-click a request in Proxy, Target, Repeater, or Logger and select <code class=InlineCode>Create Click-Jackalope POC</code> to pre-populate the target automatically.</li>
+  <li>Review the header analysis panel to see how <code class=InlineCode>X-Frame-Options</code> and <code class=InlineCode>frame-ancestors</code> directives affect framing for the selected response.</li>
+  <li>Select a PoC template (<code class=InlineCode>standard</code>, <code class=InlineCode>decoy-login</code>, or <code class=InlineCode>banner-lure</code>) from the template selector.</li>
+  <li>Use the in-extension preview to inspect the generated HTML before committing to it.</li>
+  <li>Save the HTML file locally and open it in a browser to verify framing behavior, or enable localhost serving mode to test over HTTP instead of a local file path.</li>
+  <li>Use the copy notes function to export a concise report-ready summary of the target URL and observed frame-defense headers.</li>
+</ol>

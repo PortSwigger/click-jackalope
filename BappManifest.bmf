@@ -1,0 +1,13 @@
+Uuid: 64ae2a5e5ebd45eb97690f7f583bb8dc
+ExtensionType: 1
+Name: Click-Jackalope - Clickjacking POC generator
+RepoName: click-jackalope
+ScreenVersion: 1.0.0
+SerialVersion: 1
+MinPlatformVersion: 29
+ProOnly: True
+Author: Matthew Prater
+ShortDescription: Generates clickjacking proof-of-concept pages and inspects frame-defense headers.
+EntryPoint: click-jackalope-burp-1.0.0.jar
+BuildCommand: ./gradlew build
+SupportedProducts: Pro
