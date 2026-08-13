@@ -9,5 +9,5 @@ ProOnly: True
 Author: Matthew Prater
 ShortDescription: Generates clickjacking proof-of-concept pages and inspects frame-defense headers.
 EntryPoint: click-jackalope-burp-1.0.0.jar
-BuildCommand: ./gradlew build
+BuildCommand: ./gradlew jar
 SupportedProducts: Pro
