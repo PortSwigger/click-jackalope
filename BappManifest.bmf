@@ -3,7 +3,7 @@ ExtensionType: 1
 Name: Click-Jackalope - Clickjacking POC generator
 RepoName: click-jackalope
 ScreenVersion: 1.0.0
-SerialVersion: 1
+SerialVersion: 2
 MinPlatformVersion: 29
 ProOnly: True
 Author: Matthew Prater
