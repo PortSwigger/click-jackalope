@@ -3,11 +3,11 @@ ExtensionType: 1
 Name: Click-Jackalope - Clickjacking POC generator
 RepoName: click-jackalope
 ScreenVersion: 1.0.0
-SerialVersion: 3
+SerialVersion: 4
 MinPlatformVersion: 29
 ProOnly: True
 Author: Matthew Prater
 ShortDescription: Generates clickjacking proof-of-concept pages and inspects frame-defense headers.
-EntryPoint: click-jackalope-burp-1.0.0.jar
+EntryPoint: click-jackalope-burp-1.0.1.jar
 BuildCommand: ./gradlew jar
 SupportedProducts: Pro
